@@ -17,7 +17,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1087/problem/C
+https://codeforces.com/contest/1087/problem/C
 
 ---
 ### 题意

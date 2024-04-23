@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/05/02/2018-05-02-upc_5252_triangletohexagon_ji_
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5252
+https://exam.upc.edu.cn/problem.php?id=5252
 
 ---
 ### 题目：

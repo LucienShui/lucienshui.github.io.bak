@@ -68,19 +68,19 @@ network={
 1. `/etc/apt/sources.list`
 
     ```bash
-    deb http://mirrors.aliyun.com/debian/ bullseye main non-free contrib
-    # deb-src http://mirrors.aliyun.com/debian/ bullseye main non-free contrib
-    deb http://mirrors.aliyun.com/debian-security/ bullseye-security main
-    # deb-src http://mirrors.aliyun.com/debian-security/ bullseye-security main
-    deb http://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib
-    # deb-src http://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib
+    deb https://mirrors.aliyun.com/debian/ bullseye main non-free contrib
+    # deb-src https://mirrors.aliyun.com/debian/ bullseye main non-free contrib
+    deb https://mirrors.aliyun.com/debian-security/ bullseye-security main
+    # deb-src https://mirrors.aliyun.com/debian-security/ bullseye-security main
+    deb https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib
+    # deb-src https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib
     ```
 
 2. `/etc/apt/sources.list.d/raspi.list`
 
     ```bash
-    deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ bullseye main
-    # deb-src http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ bullseye main
+    deb https://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ bullseye main
+    # deb-src https://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ bullseye main
     ```
 
 ### 4. 治好强迫症

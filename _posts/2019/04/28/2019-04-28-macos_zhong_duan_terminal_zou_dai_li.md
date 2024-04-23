@@ -11,7 +11,7 @@ tags: ["macos", "代理"]
 ## 设置 Http 代理
 
 ```bash
-echo "alias proxy='export all_proxy=http://${proxy_addr}:${port}'" >> ~/.bash_profile && source ~/.bash_profile
+echo "alias proxy='export all_proxy=https://${proxy_addr}:${port}'" >> ~/.bash_profile && source ~/.bash_profile
 ```
 
 ## 设置 Socks5 代理

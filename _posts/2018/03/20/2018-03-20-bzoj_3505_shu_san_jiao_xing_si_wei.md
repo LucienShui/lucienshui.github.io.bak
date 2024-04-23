@@ -10,7 +10,7 @@ tags: ["思维"]
 
 ### 题目链接：
 
-http://www.lydsy.com/JudgeOnline/problem.php?id=3505
+https://www.lydsy.com/JudgeOnline/problem.php?id=3505
 
 ---
 ### 题目：

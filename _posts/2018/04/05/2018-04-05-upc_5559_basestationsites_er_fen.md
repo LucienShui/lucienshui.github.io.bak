@@ -10,7 +10,7 @@ tags: ["二分"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5559
+https://exam.upc.edu.cn/problem.php?id=5559
 
 ---
 ### 题目：

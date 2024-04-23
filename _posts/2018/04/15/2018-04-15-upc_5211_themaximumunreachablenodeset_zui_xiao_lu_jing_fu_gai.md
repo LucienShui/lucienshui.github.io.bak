@@ -10,7 +10,7 @@ tags: ["最小路径覆盖"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5211
+https://exam.upc.edu.cn/problem.php?id=5211
 
 ---
 ### 题目：

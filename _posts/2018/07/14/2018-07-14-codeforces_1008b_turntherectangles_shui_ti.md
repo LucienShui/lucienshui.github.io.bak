@@ -10,7 +10,7 @@ tags: ["题解", "贪心"]
 
 ### 题目链接
 
-http://codeforces.com/contest/1008/problem/B
+https://codeforces.com/contest/1008/problem/B
 
 ---
 ### 题目

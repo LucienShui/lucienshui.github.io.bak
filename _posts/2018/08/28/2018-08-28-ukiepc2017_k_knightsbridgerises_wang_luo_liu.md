@@ -10,7 +10,7 @@ tags: ["网络流", "题解", "图论"]
 
 ### 题目链接
 
-http://codeforces.com/gym/101606
+https://codeforces.com/gym/101606
 
 ---
 

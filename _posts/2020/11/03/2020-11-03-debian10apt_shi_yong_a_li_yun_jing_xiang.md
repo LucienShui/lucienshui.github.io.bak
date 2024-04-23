@@ -19,14 +19,14 @@ description: "最近打算在 Debian 上折腾 KVM，在阿里云官网的教程
 
 ```python
 ## 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
-deb http://mirrors.aliyun.com/debian/ buster main contrib non-free
-## deb-src http://mirrors.aliyun.com/debian/ buster main contrib non-free
-deb http://mirrors.aliyun.com/debian/ buster-updates main contrib non-free
-## deb-src http://mirrors.aliyun.com/debian/ buster-updates main contrib non-free
-deb http://mirrors.aliyun.com/debian/ buster-backports main contrib non-free
-## deb-src http://mirrors.aliyun.com/debian/ buster-backports main contrib non-free
-deb http://mirrors.aliyun.com/debian-security buster/updates main contrib non-free
-## deb-src http://mirrors.aliyun.com/debian-security buster/updates main contrib non-free
+deb https://mirrors.aliyun.com/debian/ buster main contrib non-free
+## deb-src https://mirrors.aliyun.com/debian/ buster main contrib non-free
+deb https://mirrors.aliyun.com/debian/ buster-updates main contrib non-free
+## deb-src https://mirrors.aliyun.com/debian/ buster-updates main contrib non-free
+deb https://mirrors.aliyun.com/debian/ buster-backports main contrib non-free
+## deb-src https://mirrors.aliyun.com/debian/ buster-backports main contrib non-free
+deb https://mirrors.aliyun.com/debian-security buster/updates main contrib non-free
+## deb-src https://mirrors.aliyun.com/debian-security buster/updates main contrib non-free
 ```
 
 ### 参考

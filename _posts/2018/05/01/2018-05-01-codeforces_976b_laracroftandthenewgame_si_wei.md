@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/05/01/2018-05-01-codeforces_976b_laracroftandth
 
 ### 题目链接：
 
-http://codeforces.com/contest/976/problem/B
+https://codeforces.com/contest/976/problem/B
 
 ---
 ### 题目：

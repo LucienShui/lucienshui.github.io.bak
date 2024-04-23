@@ -10,7 +10,7 @@ tags: ["题解"]
 
 ### 题目链接
 
-[http://codeforces.com/contest/989/problem/A](http://www.lucien.ink/go/cf989a/)
+[https://codeforces.com/contest/989/problem/A](https://www.lucien.ink/go/cf989a/)
 
 ---
 ### 题目

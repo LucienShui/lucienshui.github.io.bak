@@ -10,7 +10,7 @@ tags: ["lca"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5909
+https://exam.upc.edu.cn/problem.php?id=5909
 
 ---
 ### 题目：

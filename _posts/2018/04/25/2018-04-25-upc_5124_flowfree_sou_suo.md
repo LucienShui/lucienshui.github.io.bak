@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/04/25/2018-04-25-upc_5124_flowfree_sou_suo/
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5124
+https://exam.upc.edu.cn/problem.php?id=5124
 
 ---
 ### 题目：

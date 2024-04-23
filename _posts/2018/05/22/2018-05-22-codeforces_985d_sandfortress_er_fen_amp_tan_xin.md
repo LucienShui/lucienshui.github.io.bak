@@ -10,7 +10,7 @@ tags: ["二分", "贪心"]
 
 ### 题目链接
 
-http://codeforces.com/contest/985/problem/D
+https://codeforces.com/contest/985/problem/D
 
 ---
 ### 题目

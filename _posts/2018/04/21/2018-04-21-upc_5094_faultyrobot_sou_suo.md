@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/04/21/2018-04-21-upc_5094_faultyrobot_sou_suo/
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5094
+https://exam.upc.edu.cn/problem.php?id=5094
 
 ---
 ### 题目：

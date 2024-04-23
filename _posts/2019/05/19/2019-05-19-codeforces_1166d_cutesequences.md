@@ -12,7 +12,7 @@ tags: ["题解", "思维", "codeforces", "构造"]
 
 ### 地址
 
-http://codeforces.com/contest/1166/problem/D
+https://codeforces.com/contest/1166/problem/D
 
 ### 原文地址
 

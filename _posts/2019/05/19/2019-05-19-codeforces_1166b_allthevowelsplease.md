@@ -12,7 +12,7 @@ tags: ["题解", "codeforces"]
 
 ### 地址
 
-http://codeforces.com/contest/1166/problem/B
+https://codeforces.com/contest/1166/problem/B
 
 ### 原文地址
 

@@ -10,7 +10,7 @@ tags: ["计算几何"]
 
 ### 题目链接：
 
-http://codeforces.com/gym/101635/attachments
+https://codeforces.com/gym/101635/attachments
 
 ---
 ### 题目：

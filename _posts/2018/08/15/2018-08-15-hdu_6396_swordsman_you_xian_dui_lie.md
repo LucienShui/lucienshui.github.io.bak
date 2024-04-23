@@ -10,7 +10,7 @@ tags: ["题解", "思维", "贪心"]
 
 ### 题目链接
 
-http://acm.hdu.edu.cn/showproblem.php?pid=6396
+https://acm.hdu.edu.cn/showproblem.php?pid=6396
 
 ---
 

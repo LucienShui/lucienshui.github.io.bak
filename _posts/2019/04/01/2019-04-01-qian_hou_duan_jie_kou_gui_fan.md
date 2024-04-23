@@ -12,7 +12,7 @@ tags: ["网站", "其它", "程序人生"]
 
 随着前后端分离越来越普遍, 后端接口规范也就越来越重要了. 一套良好的接口规范可以提升工作效率, 减少沟通障碍.
 
-通常我们都会采用 REST 方式来提供接口, 使用 [JSON](http://json.org) 来传输数据.
+通常我们都会采用 REST 方式来提供接口, 使用 [JSON](https://json.org) 来传输数据.
 
 | 名词        | 含义 |
 |:----------|:-----------|
@@ -65,8 +65,8 @@ tags: ["网站", "其它", "程序人生"]
 * 调用接口业务失败的常用错误码, 例如未授权时调用需要授权的接口返回 `"status": 1`
 * 接口需要登录时如何处理, 特别是同时涉及到 Web 端/微信端/App 端, 需要前端针对运行环境判断如何跳转到登录页面
 * 返回数据中图片 URL 是完整的还是部分的
-  * `http://a.res.com/path/to/img.png` 这就是完整的, 前端直接使用这个 URL
-  * `/path/to/img.png` 这就是部分的, 一般省略域名部分, 前端需要自己拼接后才能使用 `'http://a.res.com' + '/path/to/img.png'`
+  * `https://a.res.com/path/to/img.png` 这就是完整的, 前端直接使用这个 URL
+  * `/path/to/img.png` 这就是部分的, 一般省略域名部分, 前端需要自己拼接后才能使用 `'https://a.res.com' + '/path/to/img.png'`
 * 返回数据中页面跳转的 URL 是给完整的还是部分的
   * 内部页面返回部分的, 或者只给ID, 由前端自己拼接, 例如只给出商品ID, 让前端自己拼接商品详情页的 URL
   * 外部页面返回完整的, 例如广告位要跳转去谷歌
@@ -113,7 +113,7 @@ tags: ["网站", "其它", "程序人生"]
 
 #### 接口地址和请求方式
 
-接口根路径 - [Root Endpoint](https://developer.github.com/v3/#root-endpoint) 推荐为: `http://api.yourdomain.com` 或者 `http://yourdomain.com/api`
+接口根路径 - [Root Endpoint](https://developer.github.com/v3/#root-endpoint) 推荐为: `https://api.yourdomain.com` 或者 `https://yourdomain.com/api`
 
 接口地址即接口的 URL, 定义时使用相对路径(即不用带上域名信息), 建议分模块来定义, 推荐 REST 风格, 例如
 * `GET /user/:id` 表示获取用户信息
@@ -160,7 +160,7 @@ Content-Type: application/json; charset=utf-8
 **字段名** |**字段说明**
 :----------|:-----------
 data       | **业务数据**<br>必须是任意 JSON 数据类型(number/string/boolean/object/array).<br>推荐始终返回一个 object (即再包一层)以便于扩展字段.<br>例如: 用户数据应该返回 `{"user":{"name":"test"}}`, 而不是直接为 `{"name":"test"}`
-status     | **状态码**<br>必须是 `>= 0` 的 JSON Number 整数.<ul><li>`0` 表示请求处理成功, 此时可以省略 `status` 字段, 省略时和为 `0` 时表示同一含义.</li><li>`非 0` 表示发生错误时的[错误码](http://open.weibo.com/wiki/Error_code "错误码格式可以参考微博API的 Error code"), 此时可以省略 `data` 字段, 并视情况输出 `statusInfo` 字段作为补充信息</li></ul>
+status     | **状态码**<br>必须是 `>= 0` 的 JSON Number 整数.<ul><li>`0` 表示请求处理成功, 此时可以省略 `status` 字段, 省略时和为 `0` 时表示同一含义.</li><li>`非 0` 表示发生错误时的[错误码](https://open.weibo.com/wiki/Error_code "错误码格式可以参考微博API的 Error code"), 此时可以省略 `data` 字段, 并视情况输出 `statusInfo` 字段作为补充信息</li></ul>
 statusInfo | **状态信息**<br>必须是任意 JSON 数据类型.<br>推荐始终返回一个 object 包含 `message` 和 `detail` 字段<ul><li>`message` 字段作为接口处理失败时, **给予用户的友好的提示信息**, 即所有给用户的提示信息都统一由后端来处理.</li><li>`detail` 字段用来放置接口处理失败时的详细错误信息. 只是为了方便排查错误, 前端无需使用.</li></ul>
 
 例如
@@ -214,7 +214,7 @@ if (!response.status) {
 对于错误码的规范, 参考行业实践, 大致有两种方案
 
 * 做显性的类型区分, 快速定位错误的类别, 例如通过字母划分类型: `A101`, `B131`
-  * [Standard ISO Response Codes](http://www.nexion.co.za/docs/merchant-access/user-manual/17.%20Standard%20ISO%20Response%20codes.pdf)
+  * [Standard ISO Response Codes](https://www.nexion.co.za/docs/merchant-access/user-manual/17.%20Standard%20ISO%20Response%20codes.pdf)
 * 固定位数, 设定区间(例如手机号码, 身份证号码)来划分不同的错误类型
   * [HTTP Status Code Definitions](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html "Most API services follow the HTTP error code system RFC2616 with ranges of error codes for different types of error")
   * [System Error Codes](https://docs.microsoft.com/en-us/windows/desktop/Debug/system-error-codes)
@@ -291,21 +291,21 @@ if (!response.status) {
 * 跨域
   - [CORS](https://developer.github.com/v3/#cross-origin-resource-sharing "Cross Origin Resource Sharing")
   - [JSONP](https://developer.github.com/v3/#json-p-callbacks)
-* [避免中文乱码](http://blog.csdn.net/chaijunkun/article/details/8257209 "将中文等非 ASCII 字符转义为 \uFFFF 这样的 unicode 形式 | non-ASCII characters to be escaped as \uFFFF")
+* [避免中文乱码](https://blog.csdn.net/chaijunkun/article/details/8257209 "将中文等非 ASCII 字符转义为 \uFFFF 这样的 unicode 形式 | non-ASCII characters to be escaped as \uFFFF")
 
 ### 参考
 * [E-JSON数据传输标准](https://github.com/ecomfe/spec/blob/master/e-json.md)
-* [有范云协作](http://youfan.netease.com/) 让项目的协作姿势更有范儿
+* [有范云协作](https://youfan.netease.com/) 让项目的协作姿势更有范儿
 
   > * **交互阶段说明**
   >   * 交互设计师根据产品方的需求对产品进行行为设计和界面设计的阶段，主要产出物为交互设计稿
   >   * 开发工程师需要做的事情是针对产品需求、交互设计稿中的内容进行技术评审，为产品方、交互设计师提供可行技术实现解决方案，对于多种不同解决方案需针对各种解决方案做分析说明，务必准确传达各种方案的优缺点，并根据需求给出建议方案
   > * **系统设计说明**
   >   * 各端开发工程师针对产品需求说明、交互设计稿开始设计系统架构、拆分子系统、划分子系统模块、协调端与端之间的接口规范，这个阶段各端根据实际情况输出若干系统设计说明书等文档
-  >   * 除此之外更重要的是输出端与端之间通信的接口规范，而这个规范则可以借助 [NEI 平台](http://nei.netease.com/) 来完成
+  >   * 除此之外更重要的是输出端与端之间通信的接口规范，而这个规范则可以借助 [NEI 平台](https://nei.netease.com/) 来完成
   > * **编码阶段说明**
   >   * 开发工程师根据系统设计阶段的输出，用代码来实现这样的系统，包括技术方案的选型、项目框架的搭建、工具及环境的配置等
-  >   * 其中有些工作可以借助于有范云协作提供的自动化工具 [NEI-Toolkit](https://github.com/NEYouFan/nei-toolkit) 来完成，比如项目的初始结构代码、在 [NEI平台](http://nei.netease.com/) 上定义好的接口规范等
+  >   * 其中有些工作可以借助于有范云协作提供的自动化工具 [NEI-Toolkit](https://github.com/NEYouFan/nei-toolkit) 来完成，比如项目的初始结构代码、在 [NEI平台](https://nei.netease.com/) 上定义好的接口规范等
   > * **自测阶段说明**
   >   * 各个端的工程师验证自己编写的代码的正确性，按角色不同，测试方式也有所有不同
   >   * 对于前端和移动端工程师来说，主要是需要测试各种可能的值会不会影响界面展示
@@ -316,7 +316,7 @@ if (!response.status) {
   > * **测试阶段说明**
   >   * 开发工程师开发完成后提测的过程，是产品上线前的最后环节
   >   * 测试工程师会对接 NEI 平台生成接口测试用例代码并集成到自动化测试平台运行，如果NEI平台的接口定义与实际提测的项目不符则此次提测失败，需由开发对照 NEI 平台检查接口实现情况，所以可以保证 NEI 平台上的接口定义始终与线上保持一致
-* [客户端API请求规范](http://blog.12xiaoshi.com/2016/03/31/tech/api-constraint_design/)
+* [客户端API请求规范](https://blog.12xiaoshi.com/2016/03/31/tech/api-constraint_design/)
 
   > | 参数名 | 说明                                                                                               |
   > |--------|----------------------------------------------------------------------------------------------------|
@@ -328,8 +328,8 @@ if (!response.status) {
   > | lng    | 手机上获取的经度                                                                                   |
   > | lat    | 手机上获取的纬度                                                                                   |
   > | ci     | 渠道标识，格式为：channelId@应用名平台客户端版本，例如：1001@nzaom_android_1.0，其中1001表示应用宝 |
-* [GitHub API](https://developer.github.com/v3/) | [微博API](http://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI) | [淘宝开放平台 API](http://open.taobao.com/doc2/detail.htm?articleId=101617&docType=1&treeId=1)
-* [JSend](http://labs.omniti.com/labs/jsend "JSend is a specification that lays down some rules for how JSON responses from web servers should be formatted.") | [JSON API](http://jsonapi.org/) | [JSON Schema](http://json-schema.org/ "describes your JSON data format") | [JSON-RPC](http://www.jsonrpc.org/) | [JWT](https://jwt.io/ "JSON Web Tokens | token-based authentication") | [OAuth](http://oauth.net/)
+* [GitHub API](https://developer.github.com/v3/) | [微博API](https://open.weibo.com/wiki/%E5%BE%AE%E5%8D%9AAPI) | [淘宝开放平台 API](https://open.taobao.com/doc2/detail.htm?articleId=101617&docType=1&treeId=1)
+* [JSend](https://labs.omniti.com/labs/jsend "JSend is a specification that lays down some rules for how JSON responses from web servers should be formatted.") | [JSON API](https://jsonapi.org/) | [JSON Schema](https://json-schema.org/ "describes your JSON data format") | [JSON-RPC](https://www.jsonrpc.org/) | [JWT](https://jwt.io/ "JSON Web Tokens | token-based authentication") | [OAuth](https://oauth.net/)
 
   > | Type    | Description | Required Keys | Optional Keys |
   > |---------|-------------|---------------|---------------|
@@ -337,5 +337,5 @@ if (!response.status) {
   > | fail    | There was a problem with the data submitted, or some pre-condition of the API call wasn't satisfied | status, data | |
   > | error    | An error occurred in processing the request, i.e. an exception was thrown | status, message | code, data |
 * [Google JSON Style Guide](https://google.github.io/styleguide/jsoncstyleguide.xml)
-* [最佳实践：更好的设计你的 REST API](http://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi) | [RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html) | [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) | [HTTP API Design Guide](https://github.com/interagent/http-api-design "HTTP+JSON API design practices") | [The RESTful Cookbook](https://github.com/sofish/restcookbook) | [RESTful API 编写指南](http://blog.igevin.info/posts/restful-api-get-started-to-write/)
-* [Restlet Studio - Web IDE for API design](https://studio.restlet.com/) | [Swagger](http://swagger.io/) | [ReDoc](https://github.com/Rebilly/ReDoc/ "OpenAPI/Swagger-generated API Reference Documentation") | [RAML](http://raml.org/ "RESTful API Modeling Language") | [API Blueprint](https://apiblueprint.org/)
+* [最佳实践：更好的设计你的 REST API](https://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi) | [RESTful API 设计指南](https://www.ruanyifeng.com/blog/2014/05/restful_api.html) | [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) | [HTTP API Design Guide](https://github.com/interagent/http-api-design "HTTP+JSON API design practices") | [The RESTful Cookbook](https://github.com/sofish/restcookbook) | [RESTful API 编写指南](https://blog.igevin.info/posts/restful-api-get-started-to-write/)
+* [Restlet Studio - Web IDE for API design](https://studio.restlet.com/) | [Swagger](https://swagger.io/) | [ReDoc](https://github.com/Rebilly/ReDoc/ "OpenAPI/Swagger-generated API Reference Documentation") | [RAML](https://raml.org/ "RESTful API Modeling Language") | [API Blueprint](https://apiblueprint.org/)

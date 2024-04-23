@@ -71,7 +71,7 @@ sudo apt install wget -y
 宝塔的官网很好记：[bt.cn](https://www.bt.cn)，可以在[这里](https://www.bt.cn/bbs/thread-19376-1-1.html)找到各种 Linux 发行版一键安装的命令，我的服务器用的是 Debian，所以执行以下语句：
 
 ```bash
-wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh
+wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh
 ```
 
 ![installBt.png][installBt.png]
@@ -178,7 +178,7 @@ Typecho 的官网：[typecho.org][typecho]
   [aliyun]: https://www.bt.cn/bbs/thread-2897-1-1.html
   [tencent_cloud]: https://www.bt.cn/bbs/thread-1229-1-1.html
   [huawei_cloud]: https://www.bt.cn/bbs/thread-3923-1-1.html
-  [typecho]: http://typecho.org
+  [typecho]: https://typecho.org
 
   [installBt.png]: installbt.png
   [installBtFinished.png]: installbtfinished.png

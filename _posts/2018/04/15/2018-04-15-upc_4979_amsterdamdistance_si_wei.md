@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/04/15/2018-04-15-upc_4979_amsterdamdistance_si_
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=4979
+https://exam.upc.edu.cn/problem.php?id=4979
 
 ---
 ### 题目：

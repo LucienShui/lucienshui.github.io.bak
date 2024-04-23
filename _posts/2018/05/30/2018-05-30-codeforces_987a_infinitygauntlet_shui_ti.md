@@ -10,7 +10,7 @@ tags: ["题解"]
 
 ### 题目链接
 
-http://codeforces.com/contest/987/problem/A
+https://codeforces.com/contest/987/problem/A
 
 ---
 ### 题目

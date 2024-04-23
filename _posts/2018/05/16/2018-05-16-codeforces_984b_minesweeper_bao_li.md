@@ -10,7 +10,7 @@ tags: ["暴力"]
 
 ### 题目链接：
 
-http://codeforces.com/contest/984/problem/B
+https://codeforces.com/contest/984/problem/B
 
 ---
 ### 题目：

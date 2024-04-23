@@ -48,7 +48,7 @@ apt install pve-kernel-6.1 iucode-tool
 3. 安装微代码补丁
 
 ```shell
-wget http://http.us.debian.org/debian/pool/non-free/i/intel-microcode/intel-microcode_3.20221108.1_amd64.deb
+wget https://http.us.debian.org/debian/pool/non-free/i/intel-microcode/intel-microcode_3.20221108.1_amd64.deb
 dpkg -i intel-microcode/intel-microcode_3.20221108.1_amd64.deb
 update-initramfs -u -k all
 ```

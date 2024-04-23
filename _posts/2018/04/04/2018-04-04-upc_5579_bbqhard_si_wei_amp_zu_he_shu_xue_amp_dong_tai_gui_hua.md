@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/04/04/2018-04-04-upc_5579_bbqhard_si_wei_amp_zu
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5579
+https://exam.upc.edu.cn/problem.php?id=5579
 
 ---
 ### 题目：

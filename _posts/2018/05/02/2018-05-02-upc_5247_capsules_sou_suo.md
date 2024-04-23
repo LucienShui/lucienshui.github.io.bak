@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/05/02/2018-05-02-upc_5247_capsules_sou_suo/
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5247
+https://exam.upc.edu.cn/problem.php?id=5247
 
 ---
 ### 题目：

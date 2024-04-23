@@ -10,7 +10,7 @@ tags: ["模拟"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5083
+https://exam.upc.edu.cn/problem.php?id=5083
 
 ---
 ### 题目：

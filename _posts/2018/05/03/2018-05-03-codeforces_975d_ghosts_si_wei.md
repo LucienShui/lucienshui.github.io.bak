@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/05/03/2018-05-03-codeforces_975d_ghosts_si_wei/
 
 ### 题目链接
 
-http://codeforces.com/contest/975/problem/D
+https://codeforces.com/contest/975/problem/D
 
 ---
 ### 题目

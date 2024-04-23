@@ -37,7 +37,7 @@ https://www.lucien.ink/go/UPC4123/
 ---
 ### 思路：
 
-&emsp;&emsp;三维版的[k倍区间](http://120.78.164.53/archives/63/)，此外还有二维版的：[洛谷P3941 - 入阵曲 - 二维版k倍区间](http://120.78.164.53/archives/65/)，思路都差不多，都是记录前缀和，暴利枚举，然后统计答案。
+&emsp;&emsp;三维版的[k倍区间](https://blog.lucien.ink/archives/63/)，此外还有二维版的：[洛谷P3941 - 入阵曲 - 二维版k倍区间](https://blog.lucien.ink/archives/65/)，思路都差不多，都是记录前缀和，暴利枚举，然后统计答案。
 
 ---
 ### 实现：

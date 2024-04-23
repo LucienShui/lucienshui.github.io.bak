@@ -9,7 +9,7 @@ categories: ["ACM", "动态规划"]
 
 ### 链接：
 
-http://exam.upc.edu.cn/problem.php?id=3135
+https://exam.upc.edu.cn/problem.php?id=3135
 
 ---
 ### 题目：

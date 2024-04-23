@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/06/13/2018-06-13-codeforces_989c_amistoffloresc
 
 ### 题目链接
 
-[http://codeforces.com/contest/989/problem/C](http://www.lucien.ink/go/cf989c/)
+[https://codeforces.com/contest/989/problem/C](https://www.lucien.ink/go/cf989c/)
 
 ---
 ### 题目

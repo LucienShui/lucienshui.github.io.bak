@@ -135,7 +135,7 @@ ssl_prefer_server_ciphers on;
 
 ## 设置HTTP强制跳转HTTPS
 
-&emsp;&emsp;上一步成功之后大家可能会发现通过原来的`http://example.com`无法访问网页了，因为HTTP默认走的是`80`端口，我们刚才将其修改为`443`端口了。在这里我们可以在配置文件的最后一行加入以下代码：
+&emsp;&emsp;上一步成功之后大家可能会发现通过原来的`https://example.com`无法访问网页了，因为HTTP默认走的是`80`端口，我们刚才将其修改为`443`端口了。在这里我们可以在配置文件的最后一行加入以下代码：
 
 ```
 server {
@@ -145,7 +145,7 @@ server {
 }
 ```
 
-&emsp;&emsp;意思是每一个通过`80`端口访问的请求都会强制跳转到`443`端口，这样一来访问`http://example.com`的时候就会自动跳转到`https://example.com`了。
+&emsp;&emsp;意思是每一个通过`80`端口访问的请求都会强制跳转到`443`端口，这样一来访问`https://example.com`的时候就会自动跳转到`https://example.com`了。
 
 ## 命令行下设置证书自动续期
 
@@ -185,9 +185,9 @@ systemctl restart crond.service  重启crontab
 ## 参考文档
 
 [https://www.cnblogs.com/zoro-zero/p/6590503.html](https://lucien.ink/go/81-1/)
-[http://blog.csdn.net/gsls200808/article/details/53486078](https://www.lucien.ink/go/81-2/)
+[https://blog.csdn.net/gsls200808/article/details/53486078](https://www.lucien.ink/go/81-2/)
 [https://certbot.eff.org/#ubuntuxenial-other](https://lucien.ink/go/81-3/)
-[http://nginx.org/en/docs/http/configuring_https_servers.html](https://www.lucien.ink/go/81-4/)
+[https://nginx.org/en/docs/http/configuring_https_servers.html](https://www.lucien.ink/go/81-4/)
 
 
   [1]: ping_mu_kuai_zhao_2018_02_0516.43.26.png

@@ -47,7 +47,7 @@ ETCD 支持 HTTPS 访问，ZK 在这方面缺失。
 
 Raft 协议相比 Paxos 等，算是年轻的协议，而且 Raft 协议比较简单，容易实现。
 
-至于 Raft 的通信逻辑可以参考：http://thesecretlivesofdata.com/raft/ ，十分简洁易懂。
+至于 Raft 的通信逻辑可以参考：https://thesecretlivesofdata.com/raft/ ，十分简洁易懂。
 
 ### API v2 与 API v3
 
@@ -68,14 +68,14 @@ https://pasteme.cn/7128
 ```bash
 LOCAL_IP="CHANGE_THIS"
 ETCD_DATA_DIR="/var/lib/etcd/data"
-ETCD_LISTEN_PEER_URLS="http://${LOCAL_IP}:2380"
-ETCD_LISTEN_CLIENT_URLS="http://${LOCAL_IP}:2379,http://127.0.0.1:2379"
-ETCD_ADVERTISE_CLIENT_URLS="http://${LOCAL_IP}:2379"
+ETCD_LISTEN_PEER_URLS="https://${LOCAL_IP}:2380"
+ETCD_LISTEN_CLIENT_URLS="https://${LOCAL_IP}:2379,https://127.0.0.1:2379"
+ETCD_ADVERTISE_CLIENT_URLS="https://${LOCAL_IP}:2379"
 ETCD_INITIAL_CLUSTER_TOKEN="etcd-cluster"
 
 ETCD_NAME="CHANGE_THIS"
-ETCD_INITIAL_CLUSTER="${ETCD_NAME}=http://${LOCAL_IP}:2380"
-ETCD_INITIAL_ADVERTISE_PEER_URLS="http://${LOCAL_IP}:2380"
+ETCD_INITIAL_CLUSTER="${ETCD_NAME}=https://${LOCAL_IP}:2380"
+ETCD_INITIAL_ADVERTISE_PEER_URLS="https://${LOCAL_IP}:2380"
 ETCD_INITIAL_CLUSTER_STATE="new"
 ```
 
@@ -143,7 +143,7 @@ Go OS/Arch: linux/amd64
 
 ### etcdctl
 
-一般通过 `etcdctl` 对集群进行一些操作，在操作时需要指明节点的地址，不指明 `--endpoints` 参数的话默认是 `http://localhost:2379`，同时操作多个节点时通过英文 `,` 分隔。
+一般通过 `etcdctl` 对集群进行一些操作，在操作时需要指明节点的地址，不指明 `--endpoints` 参数的话默认是 `https://localhost:2379`，同时操作多个节点时通过英文 `,` 分隔。
 
 还有一点需要注意的是，`etcdctl` 会读取环境变量 `${ETCDCTL_API}` 的值，默认 `ETCDCTL_API=2` ，而 `API v2` 早在几年前就停止支持了，所以以下的所有操作均建立在 `ETCDCTL_API=3` 的基础上。
 
@@ -189,20 +189,20 @@ No help topic for 'version'
 
 ```bash
 $ ETCDCTL_API=3 etcdctl \
---endpoints=http://localhost:2379 \
+--endpoints=https://localhost:2379 \
 member add ${node_name} \
---peer-urls=http://${node_ip}:2380
+--peer-urls=https://${node_ip}:2380
 ```
 
 现在我们将 `etcd1` 加入刚才 `etcd0` 创建的单节点集群中：
 
 ```bash
-$ ETCDCTL_API=3 etcdctl member add etcd1 --peer-urls=http://10.211.55.108:2380
+$ ETCDCTL_API=3 etcdctl member add etcd1 --peer-urls=https://10.211.55.108:2380
 Member ff81e3e0ba901ae3 added to cluster 24462beb7ff6e3a2
 
 ETCD_NAME="etcd1"
-ETCD_INITIAL_CLUSTER="etcd1=http://10.211.55.108:2380,etcd0=http://10.211.55.106:2380"
-ETCD_INITIAL_ADVERTISE_PEER_URLS="http://10.211.55.108:2380"
+ETCD_INITIAL_CLUSTER="etcd1=https://10.211.55.108:2380,etcd0=https://10.211.55.106:2380"
+ETCD_INITIAL_ADVERTISE_PEER_URLS="https://10.211.55.108:2380"
 ETCD_INITIAL_CLUSTER_STATE="existing"
 ```
 
@@ -210,8 +210,8 @@ ETCD_INITIAL_CLUSTER_STATE="existing"
 
 ```bash
 ETCD_NAME="etcd1"
-ETCD_INITIAL_CLUSTER="etcd1=http://10.211.55.108:2380,etcd0=http://10.211.55.106:2380"
-ETCD_INITIAL_ADVERTISE_PEER_URLS="http://10.211.55.108:2380"
+ETCD_INITIAL_CLUSTER="etcd1=https://10.211.55.108:2380,etcd0=https://10.211.55.106:2380"
+ETCD_INITIAL_ADVERTISE_PEER_URLS="https://10.211.55.108:2380"
 ETCD_INITIAL_CLUSTER_STATE="existing"
 ```
 
@@ -230,8 +230,8 @@ etcdctl -w=table member list
 +------------------+---------+-------+---------------------------+---------------------------+
 |        ID        | STATUS  | NAME  |        PEER ADDRS         |       CLIENT ADDRS        |
 +------------------+---------+-------+---------------------------+---------------------------+
-| 2ccace8809ee70c2 | started | etcd0 | http://10.211.55.106:2380 | http://10.211.55.106:2379 |
-| ff81e3e0ba901ae3 | started | etcd1 | http://10.211.55.108:2380 | http://10.211.55.108:2379 |
+| 2ccace8809ee70c2 | started | etcd0 | https://10.211.55.106:2380 | https://10.211.55.106:2379 |
+| ff81e3e0ba901ae3 | started | etcd1 | https://10.211.55.108:2380 | https://10.211.55.108:2379 |
 +------------------+---------+-------+---------------------------+---------------------------+
 ```
 
@@ -247,11 +247,11 @@ Member ff81e3e0ba901ae3 removed from cluster 24462beb7ff6e3a2
 3. 查看集群成员以确保删除成功
 
 ```bash
-etcdctl --endpoints=http://etcd1:2379 member list
-ff81e3e0ba901ae3, started, etcd1, http://10.211.55.108:2380, http://10.211.55.108:2379
+etcdctl --endpoints=https://etcd1:2379 member list
+ff81e3e0ba901ae3, started, etcd1, https://10.211.55.108:2380, https://10.211.55.108:2379
 ```
 
-需要注意的是我们已经把 `etcd0` 从集群中移除了，如果继续在 `etcd0` 所在的宿主机上执行 `etcdctl` 的话默认会请求 `http://localhost:2379` ，所以我们需要指定我们需要请求的节点。
+需要注意的是我们已经把 `etcd0` 从集群中移除了，如果继续在 `etcd0` 所在的宿主机上执行 `etcdctl` 的话默认会请求 `https://localhost:2379` ，所以我们需要指定我们需要请求的节点。
 
 ### 节点迁移
 

@@ -12,7 +12,7 @@ tags: ["二分", "题解", "codeforces"]
 
 ### 地址
 
-http://codeforces.com/contest/1166/problem/C
+https://codeforces.com/contest/1166/problem/C
 
 ### 原文地址
 

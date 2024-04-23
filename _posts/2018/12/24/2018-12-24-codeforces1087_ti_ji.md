@@ -17,7 +17,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1087/problem/A
+https://codeforces.com/contest/1087/problem/A
 
 ---
 ### 题意
@@ -60,7 +60,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1087/problem/B
+https://codeforces.com/contest/1087/problem/B
 
 ---
 ### 题意
@@ -103,7 +103,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1087/problem/C
+https://codeforces.com/contest/1087/problem/C
 
 ---
 ### 题意
@@ -155,7 +155,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1087/problem/D
+https://codeforces.com/contest/1087/problem/D
 
 ---
 ### 题意

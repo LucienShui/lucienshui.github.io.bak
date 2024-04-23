@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/05/10/2018-05-10-linux_xia_ssr_ke_hu_duan_de_pe
 
 ## 本文永久链接
 
-http://www.lucien.ink/archives/208/
+https://www.lucien.ink/archives/208/
 
 ## 环境
 

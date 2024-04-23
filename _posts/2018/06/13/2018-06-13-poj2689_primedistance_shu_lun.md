@@ -10,7 +10,7 @@ tags: ["数论"]
 
 ### 题目链接
 
-[http://poj.org/problem?id=2689](http://www.lucien.ink/go/poj2689/)
+[https://poj.org/problem?id=2689](https://www.lucien.ink/go/poj2689/)
 
 ---
 ### 题目

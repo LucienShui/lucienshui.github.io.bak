@@ -10,7 +10,7 @@ tags: ["动态规划"]
 
 ### 题目链接
 
-http://codeforces.com/contest/987/problem/C
+https://codeforces.com/contest/987/problem/C
 
 ---
 ### 题目

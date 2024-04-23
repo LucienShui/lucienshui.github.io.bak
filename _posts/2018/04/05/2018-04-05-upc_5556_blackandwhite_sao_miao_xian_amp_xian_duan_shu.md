@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/04/05/2018-04-05-upc_5556_blackandwhite_sao_mia
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5556
+https://exam.upc.edu.cn/problem.php?id=5556
 
 ---
 ### 题目：

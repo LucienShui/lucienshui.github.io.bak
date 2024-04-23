@@ -10,7 +10,7 @@ tags: ["搜索"]
 
 ### 题目链接
 
-http://codeforces.com/contest/987/problem/D
+https://codeforces.com/contest/987/problem/D
 
 ---
 ### 题目

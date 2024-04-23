@@ -10,7 +10,7 @@ tags: ["思维", "枚举"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5573
+https://exam.upc.edu.cn/problem.php?id=5573
 
 ---
 ### 题目：

@@ -10,7 +10,7 @@ tags: ["博弈"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5121
+https://exam.upc.edu.cn/problem.php?id=5121
 
 ---
 ### 题目：

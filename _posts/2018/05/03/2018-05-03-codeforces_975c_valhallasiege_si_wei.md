@@ -10,7 +10,7 @@ tags: ["思维"]
 
 ### 题目链接：
 
-http://codeforces.com/contest/975/problem/C
+https://codeforces.com/contest/975/problem/C
 
 ---
 ### 题目：

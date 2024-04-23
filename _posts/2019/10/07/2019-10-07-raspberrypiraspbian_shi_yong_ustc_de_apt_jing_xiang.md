@@ -12,7 +12,7 @@ tags: ["linux", "raspberry"]
 
 > 本文地址：https://blog.lucien.ink/archives/467/
 
-在 [Raspberrypi 源使用帮助 - USTC Mirror Help 文档](http://mirrors.ustc.edu.cn/help/archive.raspberrypi.org.html) 只找到 `/etc/apt/sources.list.d/raspi.list` 这个文件的应该替换为什么，并没有找到 `/etc/apt/sources.list` 的。
+在 [Raspberrypi 源使用帮助 - USTC Mirror Help 文档](https://mirrors.ustc.edu.cn/help/archive.raspberrypi.org.html) 只找到 `/etc/apt/sources.list.d/raspi.list` 这个文件的应该替换为什么，并没有找到 `/etc/apt/sources.list` 的。
 
 遂去 [Raspbian Mirrors - Raspbian](https://www.raspbian.org/RaspbianMirrors) ，搜寻了一番，由于最近可能会再入手一个新的树莓派，所以在这里记录一下。
 
@@ -21,17 +21,17 @@ tags: ["linux", "raspberry"]
 1. `/etc/apt/sources.list.d/raspi.list`
 
     ```conf
-    deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ buster main
+    deb https://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ buster main
     # Uncomment line below then 'apt-get update' to enable 'apt-get source'
-    #deb-src http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ buster main
+    #deb-src https://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ buster main
     ```
 
 2. `/etc/apt/sources.list`
 
     ```conf
-    deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+    deb https://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
     # Uncomment line below then 'apt-get update' to enable 'apt-get source'
-    #deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+    #deb-src https://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
     ```
 
 ### TUNA
@@ -41,14 +41,14 @@ tags: ["linux", "raspberry"]
 1. `/etc/apt/sources.list.d/raspi.list`
 
     ```conf
-    deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
+    deb https://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
     ```
 
 2. `/etc/apt/sources.list`
 
     ```conf
-    deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib
-    deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib
+    deb https://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib
+    deb-src https://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib
     ```
 
 ### 其它

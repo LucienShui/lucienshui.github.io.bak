@@ -82,7 +82,7 @@ llama.cpp 官方支持了非常多样化的 API 调用形式，为了缩短篇�
 ```python
 from openai import OpenAI
 
-client = OpenAI(base_url="http://192.168.1.2:8000/v1", api_key="this_is_a_api_key")
+client = OpenAI(base_url="https://192.168.1.2:8000/v1", api_key="this_is_a_api_key")
 
 stream = client.chat.completions.create(
     model="this_is_a_model_name",

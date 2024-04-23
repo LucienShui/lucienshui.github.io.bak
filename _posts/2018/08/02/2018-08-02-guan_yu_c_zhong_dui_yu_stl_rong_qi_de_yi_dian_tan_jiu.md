@@ -10,7 +10,7 @@ tags: ["其它", "程序人生"]
 
 ### 原文
 
-http://www.lucien.ink/archives/309/
+https://www.lucien.ink/archives/309/
 
 ### 起因
 

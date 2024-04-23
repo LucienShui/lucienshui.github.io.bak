@@ -16,7 +16,7 @@ https://blog.lucien.ink/archives/455/
 
 ### 题目地址
 
-http://icpc.upc.edu.cn/problem.php?id=12163
+https://icpc.upc.edu.cn/problem.php?id=12163
 
 ### 题目
 

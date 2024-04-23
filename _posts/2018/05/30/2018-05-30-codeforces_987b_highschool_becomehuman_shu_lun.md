@@ -10,7 +10,7 @@ tags: ["数论"]
 
 ### 题目链接
 
-http://codeforces.com/contest/987/problem/B
+https://codeforces.com/contest/987/problem/B
 
 ---
 ### 题目

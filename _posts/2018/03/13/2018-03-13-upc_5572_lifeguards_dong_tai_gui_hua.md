@@ -10,7 +10,7 @@ tags: ["动态规划"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5572
+https://exam.upc.edu.cn/problem.php?id=5572
 
 ---
 ### 题目：

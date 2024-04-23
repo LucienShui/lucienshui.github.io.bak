@@ -11,7 +11,7 @@ img_path: /assets/img/posts/2018/04/13/2018-04-13-upc_5206_thegameoflife_mo_ni/
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5206
+https://exam.upc.edu.cn/problem.php?id=5206
 
 ---
 ### 题目：

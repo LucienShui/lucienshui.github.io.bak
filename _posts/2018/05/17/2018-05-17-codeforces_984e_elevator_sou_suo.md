@@ -10,7 +10,7 @@ tags: ["搜索"]
 
 ### 题目链接
 
-http://codeforces.com/contest/984/problem/E
+https://codeforces.com/contest/984/problem/E
 
 ---
 ### 题目

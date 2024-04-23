@@ -12,7 +12,7 @@ tags: ["linux", "其它", "docker"]
 
 本人是参照于：[https://yeasy.gitbooks.io/docker_practice/content/](https://www.lucien.ink/go/docker_practice_gitbook/) 学习`Docker`，因每次翻查略有不便，把部分认为对于我比较重要的内容写在这里以作记录。
 
-本文保持不定时更新：http://www.lucien.ink/archives/301/
+本文保持不定时更新：https://www.lucien.ink/archives/301/
 
 ## 安装Docker
 
@@ -133,9 +133,9 @@ ID=ubuntu
 ID_LIKE=debian
 PRETTY_NAME="Ubuntu 16.04.5 LTS"
 VERSION_ID="16.04"
-HOME_URL="http://www.ubuntu.com/"
-SUPPORT_URL="http://help.ubuntu.com/"
-BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
 ```
 
 然后就可以开始随意瞎搞了。

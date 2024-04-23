@@ -22,7 +22,7 @@ tags: ["项目", "持续集成", "github", "工程"]
 
 本文章旨在介绍 GitHub Actions 的基础操作，随后通过一个项目来演示 GitHub Actions 的实际效果。
 
-本篇文章参考了阮一峰老师的 [GitHub Actions 入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)，感谢阮一峰老师 Orz。
+本篇文章参考了阮一峰老师的 [GitHub Actions 入门教程](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)，感谢阮一峰老师 Orz。
 
 ### 1. 什么是 GitHub Actions
 

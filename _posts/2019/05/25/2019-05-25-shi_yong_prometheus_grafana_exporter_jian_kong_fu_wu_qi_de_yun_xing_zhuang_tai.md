@@ -195,7 +195,7 @@ systemctl restart grafana-server
 
 这里是为了安装一个 `饼图` 的插件。
 
-然后访问 `http://<YOUR_IP>:3000` ，默认的账号密码都是 `admin`。
+然后访问 `https://<YOUR_IP>:3000` ，默认的账号密码都是 `admin`。
 
 ![默认的账号密码都是 admin](ping_mu_kuai_zhao_2019_05_2515.38.23.png)
 
@@ -207,11 +207,11 @@ systemctl restart grafana-server
 
 ![选择 Prometheus](ping_mu_kuai_zhao_2019_05_2515.39.24.png)
 
-`Http` $\rightarrow$ `URL` 中填入 `http://localhost:9090` ，也就是 `prometheus` 提供的接口。
+`Http` $\rightarrow$ `URL` 中填入 `https://localhost:9090` ，也就是 `prometheus` 提供的接口。
 
 然后点击 `Save & Test`。
 
-![填入 http://localhost:9090](ping_mu_kuai_zhao_2019_05_2515.40.57.png)
+![填入 https://localhost:9090](ping_mu_kuai_zhao_2019_05_2515.40.57.png)
 
 然后把鼠标挪到左上角的 `+` 上，注意是挪上去，然后在弹出的菜单中点击 `Import`。
 

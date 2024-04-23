@@ -10,7 +10,7 @@ tags: ["思维"]
 
 ### 题目链接
 
-[http://codeforces.com/contest/989/problem/B](http://www.lucien.ink/go/cf989b/)
+[https://codeforces.com/contest/989/problem/B](https://www.lucien.ink/go/cf989b/)
 
 ---
 ### 题目

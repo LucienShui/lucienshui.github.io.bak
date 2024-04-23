@@ -10,7 +10,7 @@ tags: ["线段树"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5791
+https://exam.upc.edu.cn/problem.php?id=5791
 
 ---
 ### 题目：

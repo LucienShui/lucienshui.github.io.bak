@@ -10,7 +10,7 @@ tags: ["动态规划"]
 
 ### 题目链接：
 
-http://codeforces.com/gym/101635/attachments
+https://codeforces.com/gym/101635/attachments
 
 ---
 ### 题目：

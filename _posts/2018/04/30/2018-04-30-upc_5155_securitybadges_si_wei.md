@@ -10,7 +10,7 @@ tags: ["思维"]
 
 ### 题目链接：
 
-http://exam.upc.edu.cn/problem.php?id=5155
+https://exam.upc.edu.cn/problem.php?id=5155
 
 ---
 ### 题目：

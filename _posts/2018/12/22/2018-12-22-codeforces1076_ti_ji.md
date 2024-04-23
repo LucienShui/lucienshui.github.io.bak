@@ -17,7 +17,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1076/problem/A
+https://codeforces.com/contest/1076/problem/A
 
 ---
 ### 题意
@@ -55,7 +55,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1076/problem/B
+https://codeforces.com/contest/1076/problem/B
 
 ---
 ### 题意
@@ -124,7 +124,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1076/problem/C
+https://codeforces.com/contest/1076/problem/C
 
 ---
 ### 题意
@@ -190,7 +190,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1076/problem/D
+https://codeforces.com/contest/1076/problem/D
 
 ---
 ### 题意
@@ -298,7 +298,7 @@ https://lucien.ink
 ---
 ### 题目链接
 
-http://codeforces.com/contest/1076/problem/E
+https://codeforces.com/contest/1076/problem/E
 
 ---
 ### 题意
